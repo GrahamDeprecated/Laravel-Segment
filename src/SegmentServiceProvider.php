@@ -14,6 +14,8 @@ class SegmentServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->package('cachethq/segment', 'cachethq/segment', __DIR__);
+
+        return new Segment($this->app['config']->get('cachethq/segment::config'));
     }
 
     /**
@@ -23,8 +25,6 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('segment', function ($app) {
-            return new Segment($app['config']->get('cachethq/segment::config'));
-        });
+        //
     }
 }

@@ -25,7 +25,7 @@ class SegmentServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('segment', function ($app) {
-            return Segment::init($app['config']->get('segment::config.write_key'));
+            return Segment::init($app['config']->get('segment::write_key'));
         });
     }
 }

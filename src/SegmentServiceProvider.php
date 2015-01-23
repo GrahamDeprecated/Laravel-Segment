@@ -15,12 +15,6 @@ class SegmentServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->package('cachethq/segment');
-
-        /**
-         * Load the Segment.io configuration.
-         */
-        $writeKey = $this->app->config->get('segment::config.write_key');
-        Segment::init($writeKey);
     }
 
     /**
@@ -30,7 +24,13 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app['segment'] = $this->app->share(function(app) {
+            /**
+             * Load the Segment.io configuration.
+             */
+            $writeKey = $this->app->config->get('segment::config.write_key');
+            return Segment::init($writeKey);
+        });
     }
 
     /**

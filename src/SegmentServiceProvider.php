@@ -2,8 +2,8 @@
 
 namespace CachetHQ\Segment;
 
+use CachetHQ\Segment\Segment;
 use Illuminate\Support\ServiceProvider;
-use Segment;
 
 class SegmentServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('cachethq/segment', 'cachethq/segment', __DIR__);
+        $this->package('cachethq/segment', 'cachethq/segment', realpath(__DIR__.'/../'));
     }
 
     /**
@@ -25,7 +25,7 @@ class SegmentServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('segment', function ($app) {
-            return Segment::init($app['config']->get('cachethq/segment::write_key'));
+            return new Segment($app['config']);
         });
     }
 }

@@ -28,14 +28,4 @@ class SegmentServiceProvider extends ServiceProvider
             return Segment::init($app['config']->get('segment::config.write_key'));
         });
     }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return array();
-    }
 }

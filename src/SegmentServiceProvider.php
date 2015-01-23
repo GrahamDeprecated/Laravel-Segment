@@ -3,6 +3,7 @@
 namespace CachetHQ\Segment;
 
 use Illuminate\Support\ServiceProvider;
+use Segment;
 
 class SegmentServiceProvider extends ServiceProvider
 {
@@ -15,7 +16,7 @@ class SegmentServiceProvider extends ServiceProvider
     {
         $this->package('cachethq/segment', 'cachethq/segment', __DIR__);
 
-        return new Segment($this->app['config']->get('cachethq/segment::config'));
+        Segment::init($this->app->config->get('cachethq/segment::write_key'));
     }
 
     /**

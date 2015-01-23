@@ -12,7 +12,8 @@ class Segment extends SegmentCom
      *
      * @param \Illuminate\Config\Repository $config
      */
-    public function __construct(Repository $config) {
+    public function __construct(Repository $config)
+    {
         static::init($config->get('write_key'));
     }
 }

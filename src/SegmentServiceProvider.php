@@ -13,6 +13,10 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if (! $this->app->config->get('cachethq/segment::enabled')) {
+            return;
+        }
+
         $this->package('cachethq/segment', 'cachethq/segment', __DIR__);
     }
 

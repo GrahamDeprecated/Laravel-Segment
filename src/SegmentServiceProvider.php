@@ -3,6 +3,7 @@
 namespace CachetHQ\Segment;
 
 use Illuminate\Support\ServiceProvider;
+use Segment;
 
 class SegmentServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,13 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->package('cachethq/segment');
+
+        /**
+         * Load the Segment.io configuration.
+         */
+        $writeKey = $this->app->config->get('segment::config.write_key');
+        Segment::init($writeKey);
     }
 
     /**
@@ -24,5 +31,15 @@ class SegmentServiceProvider extends ServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array();
     }
 }

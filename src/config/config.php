@@ -5,5 +5,5 @@ return [
     'consumer'      => 'socket',
     'debug'         => false,
     'ssl'           => true,
-    'error_handler' => null
+    'error_handler' => null,
 ];

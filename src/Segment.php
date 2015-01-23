@@ -2,7 +2,6 @@
 
 namespace CachetHQ\Segment;
 
-use Illuminate\Config\Repository;
 use Segment as SegmentCom;
 
 class Segment extends SegmentCom

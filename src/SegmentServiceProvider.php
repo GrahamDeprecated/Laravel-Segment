@@ -25,11 +25,7 @@ class SegmentServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app['segment'] = $this->app->share(function($app) {
-            /**
-             * Load the Segment.io configuration.
-             */
-            $writeKey = $app['config']->get('segment::config.write_key');
-            return Segment::init($writeKey);
+            return Segment::init($app['config']->get('segment::config.write_key'));
         });
     }
 

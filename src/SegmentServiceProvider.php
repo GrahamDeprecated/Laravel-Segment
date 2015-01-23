@@ -13,7 +13,7 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('cachethq/segment', 'cachethq/segment', realpath(__DIR__.'/../'));
+        $this->package('cachethq/segment', 'cachethq/segment', __DIR__));
     }
 
     /**

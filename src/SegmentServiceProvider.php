@@ -24,7 +24,7 @@ class SegmentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['segment'] = $this->app->share(function(app) {
+        $this->app['segment'] = $this->app->share(function($app) {
             /**
              * Load the Segment.io configuration.
              */

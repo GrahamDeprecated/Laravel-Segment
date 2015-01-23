@@ -28,7 +28,7 @@ class SegmentServiceProvider extends ServiceProvider
             /**
              * Load the Segment.io configuration.
              */
-            $writeKey = $this->app->config->get('segment::config.write_key');
+            $writeKey = $app['config']->get('segment::config.write_key');
             return Segment::init($writeKey);
         });
     }

@@ -10,10 +10,10 @@ class Segment extends SegmentCom
     /**
      * Constructs a new instance of the segmentio library.
      *
-     * @param \Illuminate\Config\Repository $config
+     * @param array $config
      */
-    public function __construct(Repository $config)
+    public function __construct($config)
     {
-        static::init($config->get('write_key'));
+        static::init($config['write_key']);
     }
 }

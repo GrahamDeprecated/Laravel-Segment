@@ -2,6 +2,7 @@
 
 namespace CachetHQ\Segment;
 
+use CachetHQ\Segment\Segment;
 use Illuminate\Support\ServiceProvider;
 
 class SegmentServiceProvider extends ServiceProvider

@@ -17,8 +17,9 @@ class SegmentServiceProvider extends ServiceProvider
         $this->package('cachethq/segment', 'cachethq/segment', __DIR__);
 
         $writeKey = $this->app->config->get('cachethq/segment::write_key');
-        if ($writeKey) {
-            Segment::init($this->app->config->get('cachethq/segment::write_key'));
+        $enabled = $this->app->config->get('cachethq/segment::enabled');
+        if ($writeKey && $enabled) {
+            Segment::init($writeKey);
         }
     }
 

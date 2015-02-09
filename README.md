@@ -1,5 +1,5 @@
 # Laravel-Segment
-Segment.com wrapper for Laravel 4
+Segment.com wrapper for Laravel 4.
 
 ## Installation
 
@@ -7,7 +7,7 @@ Add the following to your `composer.json` file.
 
 ```json
 "require": {
-    "cachethq/segment": "1.0.*@dev"
+    "cachethq/segment": "~1.0"
 }
 ```
 
@@ -31,7 +31,7 @@ If you want to use the Facade, also add the alias:
 ```php
 'aliases' => [
     // ...
-    'Segment'  => 'CachethQ\Segment\Facades\Segment',
+    'Segment'  => 'CachetHQ\Segment\Facades\Segment',
 ],
 ```
 
@@ -70,7 +70,6 @@ Segment::track([
     ]
 ]);
 ```
-
 
 ## License
 

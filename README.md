@@ -1,5 +1,9 @@
 # Laravel-Segment
-Segment.com wrapper for Laravel 4.
+Segment.com wrapper for Laravel 5.
+
+#### Looking for a Laravel 4 compatible version?
+
+Checkout the [1.0 branch](https://github.com/cachethq/Laravel-Segment/tree/1.0), installable by requiring `"cachethq/segment": "~1.0"`.
 
 ## Installation
 
@@ -7,7 +11,7 @@ Add the following to your `composer.json` file.
 
 ```json
 "require": {
-    "cachethq/segment": "~1.0"
+    "cachethq/segment": "~2.0"
 }
 ```
 
@@ -38,7 +42,7 @@ If you want to use the Facade, also add the alias:
 Install the configuration file.
 
 ```bash
-$ php artisan config:publish cachethq/segment
+$ php artisan config:publish
 ```
 
 Update the new configuration file with your `write_key` as provided by [Segment.com](https://segment.com)

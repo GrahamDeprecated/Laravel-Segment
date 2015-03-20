@@ -1,18 +1,22 @@
 {
     "name": "cachethq/segment",
-    "description": "Segment.com wrapper written for Laravel 4",
+    "description": "Segment.com wrapper written for Laravel",
     "keywords": ["laravel", "framework", "segment", "segment.com", "segment.io", "api", "Laravel Segment", "CachetHQ", "cachet"],
     "license": "MIT",
     "authors": [
         {
             "name": "James Brooks",
             "email": "james@cachethq.io"
+        },
+        {
+            "name": "Joseph Cohen",
+            "email": "joe@cachethq.io"
         }
     ],
     "require": {
-        "php": ">=5.4.7",
-        "illuminate/config": "~4.1",
-        "illuminate/support": "~4.1",
+        "php": ">=5.4",
+        "illuminate/config": "~5.0",
+        "illuminate/support": "~5.0",
         "segmentio/analytics-php": "~1.1.0"
     },
     "require-dev": {
@@ -25,7 +29,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "2.0-dev"
         }
     },
     "minimum-stability": "dev",

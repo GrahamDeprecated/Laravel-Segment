@@ -1,10 +1,6 @@
 # Laravel-Segment
 Segment.com wrapper for Laravel 5.
 
-#### Looking for a Laravel 4 compatible version?
-
-Checkout the [1.0 branch](https://github.com/cachethq/Laravel-Segment/tree/1.0), installable by requiring `"cachethq/segment": "~1.0"`.
-
 ## Installation
 
 Add the following to your `composer.json` file.

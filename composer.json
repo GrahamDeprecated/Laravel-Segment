@@ -1,7 +1,7 @@
 {
     "name": "cachethq/segment",
     "description": "Segment.com wrapper written for Laravel",
-    "keywords": ["laravel", "framework", "segment", "segment.com", "segment.io", "api", "Laravel Segment", "CachetHQ", "cachet"],
+    "keywords": ["laravel", "framework", "segment", "segment.com", "segment.io", "api", "Laravel Segment", "CachetHQ", "Cachet HQ", "cachet"],
     "license": "MIT",
     "authors": [
         {

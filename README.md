@@ -7,7 +7,7 @@ Add the following to your `composer.json` file.
 
 ```json
 "require": {
-    "cachethq/segment": "~2.0"
+    "cachethq/segment": "~2.1"
 }
 ```
 

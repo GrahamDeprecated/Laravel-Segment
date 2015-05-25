@@ -29,7 +29,7 @@ return [
     | Segment Write Key
     |--------------------------------------------------------------------------
     |
-    | This option specifies key which enables you to write to Segment's API
+    | This option specifies key which enables you to write to Segment's API.
     |
     | Default: true
     |

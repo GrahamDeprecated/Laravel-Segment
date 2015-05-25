@@ -1,5 +1,8 @@
-# Laravel-Segment
+# Laravel Segment
+
+
 Segment.com wrapper for Laravel 5.
+
 
 ## Installation
 
@@ -38,10 +41,11 @@ If you want to use the Facade, also add the alias:
 Install the configuration file.
 
 ```bash
-$ php artisan config:publish
+$ php artisan vendor:publish
 ```
 
 Update the new configuration file with your `write_key` as provided by [Segment.com](https://segment.com)
+
 
 ## Using Laravel-Segment
 
@@ -71,6 +75,7 @@ Segment::track([
 ]);
 ```
 
+
 ## License
 
-Laravel-Segment is licensed under [The MIT License (MIT)](LICENSE).
+Laravel Segment is licensed under [The MIT License (MIT)](LICENSE).

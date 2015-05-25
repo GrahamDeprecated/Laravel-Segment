@@ -47,7 +47,7 @@ $ php artisan vendor:publish
 Update the new configuration file with your `write_key` as provided by [Segment.com](https://segment.com)
 
 
-## Using Laravel-Segment
+## Using Laravel Segment
 
 Once you've set your `write_key` value in the configuration, you're ready to go! For the most part you can follow [Segments own instructions](https://segment.com/docs/libraries/php/quickstart) however, you'll want to replace the `Analytics` classname with `Segment` - plus, you don't need to call `class_alias`.
 

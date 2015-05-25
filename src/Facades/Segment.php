@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Laravel Segment.
+ * This file is part of Cachet.
  *
  * (c) Cachet HQ <support@cachethq.io>
  *

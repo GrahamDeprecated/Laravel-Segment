@@ -1,8 +1,8 @@
 # Laravel Segment
 
-
 Segment.com wrapper for Laravel 5.
 
+**THIS PACKAGE IS NOW DEPRECATED. PLEASE LOOK AT [ALTTHREE/SEGMENT](https://github.com/AltThree/Segment)**
 
 ## Installation
 
@@ -74,7 +74,6 @@ Segment::track([
     ]
 ]);
 ```
-
 
 ## License
 
